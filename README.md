@@ -17,4 +17,4 @@ doc_classifier_v2 计算loss时没有加入样本权重，准确率偏低
 
 
 ## [NMT](https://github.com/XiaoQQin/nlp_projects/tree/master/NMT)
-使用attention机制的基于sequence to sequence 的英文-法语 翻译模型，数据集经过裁剪，准确率不高。encoder采用word-embedding和bi-GRU，decoder采用attention和gru，由于decoder有目标语言文本的输入作为特征，因此没法直接传入文本就能翻译。后续改进
+使用attention机制的基于sequence to sequence 的英文-法语 翻译模型，数据集经过裁剪，准确率不高。encoder采用word-embedding和bi-GRU，decoder采用attention和GRU，由于decoder有目标语言文本作为词向量word-embedding输入，因此没法直接传入文本就能翻译。后续改进。
