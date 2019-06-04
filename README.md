@@ -14,3 +14,7 @@ doc_classifier_v2 计算loss时没有加入样本权重，准确率偏低
 ## [Surname_generation](https://github.com/XiaoQQin/nlp_projects/tree/master/Surname_generation)
 简单的字符生成模型，即训练一个模型，生成surname ，以字向量为基础。由于模型的简单(只使用了一层字向量层，GRU和FC)，并且训练样本不多， 所以准确度不高.
 其中第二个模型加入在GRU层时，将h_0(即第一个时间步的隐藏输出)初始化为训练时该样本的类别，由此添加条件约束
+
+
+## [NMT](https://github.com/XiaoQQin/nlp_projects/tree/master/NMT)
+使用attention机制的基于sequence to sequence 的英文-法语 翻译模型，数据集经过裁剪，准确率不高。encoder采用word-embedding和bi-GRU，decoder采用attention和gru，由于decoder有目标语言文本的输入作为特征，因此没法直接传入文本就能翻译。后续改进
