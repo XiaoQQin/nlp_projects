@@ -1,5 +1,7 @@
 # nlp_projects :yum:
-some demos for nlp
+some demos for nlp  
+  
+如果github 上jupyter_notebook 打不开 可使用[nbviewer](https://nbviewer.jupyter.org/)打开，将网站复制进输入框即可
 
 ## [CBOW](https://github.com/XiaoQQin/nlp_projects/tree/master/CBOW)
 根据文本训练一个CBOW模型，即固定窗口的上下文token预测目标token  
